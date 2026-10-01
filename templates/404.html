@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<style>html,body{touch-action:pan-x pan-y;overscroll-behavior:none;-webkit-text-size-adjust:100%;text-size-adjust:100%;}</style>
+<script>
+(function(){var o={passive:false};
+['gesturestart','gesturechange','gestureend'].forEach(function(e){document.addEventListener(e,function(ev){ev.preventDefault();},o);});
+document.addEventListener('touchmove',function(ev){if(ev.touches&&ev.touches.length>1)ev.preventDefault();},o);
+document.addEventListener('wheel',function(ev){if(ev.ctrlKey)ev.preventDefault();},o);})();
+</script>
+<title>Bulunamadı</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&family=Syne+Mono&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#0a0a0a; color:#f0f0f0;
+    font-family:'Syne',sans-serif;
+    min-height:100vh; display:flex;
+    align-items:center; justify-content:center;
+    text-align:center; padding:24px;
+  }
+  h1 { font-size:5rem; font-weight:800; color:#e8ff47; }
+  p { color:#555; font-family:'Syne Mono',monospace; margin:12px 0 24px; }
+  a {
+    color:#e8ff47; text-decoration:none;
+    border:1px solid #e8ff47; padding:10px 24px;
+    border-radius:8px; font-size:0.85rem;
+    font-family:'Syne Mono',monospace;
+  }
+</style>
+</head>
+<body>
+<div>
+  <h1>404</h1>
+  <p>Bu QR kodu süresi dolmuş veya bulunamadı.</p>
+  <a href="/">← Ana Sayfa</a>
+</div>
+</body>
+</html>
